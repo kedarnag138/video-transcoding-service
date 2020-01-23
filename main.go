@@ -20,7 +20,7 @@ type toTranscode struct {
 }
 
 func createFileToTranscode(startTime *int, endTime *int) *toTranscode {
-	var fileURL = getFileURL("fileName.fileType")
+	var fileURL = getFileFromBucket("fileName.fileType")
 	return &toTranscode{
 		endTime:   endTime,
 		startTime: startTime,
